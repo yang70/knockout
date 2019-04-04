@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Knockout Test</title>
+  </head>
+  
+  <body>
+    <main>
+      <p>First name: <strong data-bind="text: firstName"></strong></p>
+      <p>Last name: <strong data-bind="text: lastName"></strong></p>
+      <p>First name: <input data-bind="value: firstName" /></p>
+      <p>Last name: <input data-bind="value: lastName" /></p>
+      <p>Full name: <strong data-bind="text: fullName"></strong></p>
+      <button data-bind="click: capitalizeLastName">Go caps</button>
+    </main>
+  </body>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+  <script src="main.js"></script>
+</html>
